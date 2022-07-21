@@ -1,5 +1,18 @@
 # diagrams.net Integration
 
+
+
+The following examples are available:
+
+* <a href="https://github.com/jgraph/drawio-integration/blob/master/inline.js" target="_blank">Example</a> for editing with embedInline mode and adapting embedded SVG images to dark mode (see <a href="http://jgraph.github.io/drawio-integration/inline.html" target="_blank">example</a>)
+* <a href="https://github.com/jgraph/drawio-integration/blob/master/diagram-editor.js" target="_blank">JavaScript API</a> for editing embedded SVG and PNG images in a HTML page (see <a href="http://jgraph.github.io/drawio-integration/helloworld.html" target="_blank">example1</a>, <a href="http://jgraph.github.io/drawio-integration/javascript.html" target="_blank">example2</a>)
+* <a href="http://jgraph.github.io/drawio-integration/localstorage.html#default" target="_blank">Using Local Storage</a> Saving and loading a diagrams.net diagram to/from HTML5 local storage (use the part of the hash-tag to change the local storage key)
+* <a href="http://jgraph.github.io/drawio-integration/localstorage-svg.html#default" target="_blank">Using Local Storage (SVG)</a> Saving and loading a diagrams.net diagram to/from HTML5 local storage as SVG (use the part of the hash-tag to change the local storage key). This example uses an SVG element instead of an image to support hyperlinks. Keep in mind that diagrams.net uses foreignObjects for text labels in static SVG output. ForeignObjects are not supported in IE11 and earlier. (For draft states, a special dialog is now available.)
+* <a href="http://jgraph.github.io/drawio-integration/localfile.html" target="_blank">Using Local File</a> Saving and loading to/from a self-modifying local file
+* <a href="https://github.com/jgraph/drawio-integration/tree/master/webdav" target="_blank">Using embed mode with WebDav</a>
+* <a href="https://github.com/jgraph/drawio-github" target="_blank">Using embed mode with GitHub</a>
+* <a href="https://github.com/jgraph/drawio-github/blob/master/DARK-MODE.md" target="_blank">Supporting Dark Mode in SVG</a>
+
 Integration, or "embed mode" is used for cases where the storage of the diagram is taken care of by a host application,
 and diagrams.net is used for diagram editing. In this case, diagrams.net is used inside an iframe or window with special URL
 parameters, and is remote controlled using the HTML5 Messaging API. Use embed.diagrams.net only for embed mode.
@@ -32,13 +45,3 @@ In some cases, additional steps may be required to check for a draft state or to
 
 Fonts, colors, default styles, libraries, CSS and more can be configured to match the environment and style of the host application by using the configure=1 URL parameter. See <a href="https://github.com/jgraph/drawio-integration/blob/master/localstorage-svg.html#L68" target="_blank">localstorage-svg.html</a>.
 
-The following examples are available:
-
-* <a href="https://github.com/jgraph/drawio-integration/blob/master/inline.js" target="_blank">Example</a> for editing with embedInline mode and adapting embedded SVG images to dark mode (see <a href="http://jgraph.github.io/drawio-integration/inline.html" target="_blank">example</a>)
-* <a href="https://github.com/jgraph/drawio-integration/blob/master/diagram-editor.js" target="_blank">JavaScript API</a> for editing embedded SVG and PNG images in a HTML page (see <a href="http://jgraph.github.io/drawio-integration/helloworld.html" target="_blank">example1</a>, <a href="http://jgraph.github.io/drawio-integration/javascript.html" target="_blank">example2</a>)
-* <a href="http://jgraph.github.io/drawio-integration/localstorage.html#default" target="_blank">Using Local Storage</a> Saving and loading a diagrams.net diagram to/from HTML5 local storage (use the part of the hash-tag to change the local storage key)
-* <a href="http://jgraph.github.io/drawio-integration/localstorage-svg.html#default" target="_blank">Using Local Storage (SVG)</a> Saving and loading a diagrams.net diagram to/from HTML5 local storage as SVG (use the part of the hash-tag to change the local storage key). This example uses an SVG element instead of an image to support hyperlinks. Keep in mind that diagrams.net uses foreignObjects for text labels in static SVG output. ForeignObjects are not supported in IE11 and earlier. (For draft states, a special dialog is now available.)
-* <a href="http://jgraph.github.io/drawio-integration/localfile.html" target="_blank">Using Local File</a> Saving and loading to/from a self-modifying local file
-* <a href="https://github.com/jgraph/drawio-integration/tree/master/webdav" target="_blank">Using embed mode with WebDav</a>
-* <a href="https://github.com/jgraph/drawio-github" target="_blank">Using embed mode with GitHub</a>
-* <a href="https://github.com/jgraph/drawio-github/blob/master/DARK-MODE.md" target="_blank">Supporting Dark Mode in SVG</a>
