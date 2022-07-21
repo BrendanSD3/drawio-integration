@@ -88,7 +88,7 @@ DiagramEditor.prototype.libraries = true;
 /**
  * CSS style for the iframe.
  */
-DiagramEditor.prototype.frameStyle = 'position:absolute;border:0;top:250px;left:290px;width:80%;height:100%;';
+DiagramEditor.prototype.frameStyle = 'position:absolute;border:0;top:290px;left:290px;width:80%;height:100%;';
 
 /**
  * Adds the iframe and starts editing.
@@ -205,7 +205,7 @@ DiagramEditor.prototype.setActive = function(active)
 	if (active)
 	{
 		this.previousOverflow = document.body.style.overflow;
-		document.body.style.overflow = 'hidden';
+		//document.body.style.overflow = 'hidden';
 	}
 	else
 	{
