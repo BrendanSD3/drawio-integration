@@ -88,7 +88,7 @@ DiagramEditor.prototype.libraries = true;
 /**
  * CSS style for the iframe.
  */
-DiagramEditor.prototype.frameStyle = 'position:absolute;border:0;top:250px;left:250px;width:80%;height:100%;';
+DiagramEditor.prototype.frameStyle = 'position:absolute;border:0;top:250px;left:290px;width:80%;height:100%;';
 
 /**
  * Adds the iframe and starts editing.
@@ -259,7 +259,7 @@ DiagramEditor.prototype.getTitle = function()
  */
 DiagramEditor.prototype.getFrameStyle = function()
 {
-	return this.frameStyle + ';left:220px;top:100px';
+	return this.frameStyle + ';left:220px;top:290px';
 };
 
 /**
@@ -297,11 +297,12 @@ DiagramEditor.prototype.getFrameUrl = function()
  */
 DiagramEditor.prototype.createFrame = function(url, style)
 {
+	var container=document.getElementById('mycontainer');
 	var frame = document.createElement('iframe');
 	frame.setAttribute('frameborder', '0');
 	frame.setAttribute('style', style);
 	frame.setAttribute('src', url);
-
+	container.appendChild(frame);
 	return frame;
 };
 
