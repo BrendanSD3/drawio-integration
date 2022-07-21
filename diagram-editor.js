@@ -259,9 +259,7 @@ DiagramEditor.prototype.getTitle = function()
  */
 DiagramEditor.prototype.getFrameStyle = function()
 {
-	return this.frameStyle + ';left:' +
-		document.body.scrollLeft + 'px;top:' +
-		document.body.scrollTop + 'px;';
+	return this.frameStyle + ';left:220px;top:100px';
 };
 
 /**
